@@ -1,0 +1,70 @@
+Interactive Reader with LangChain
+Project Overview
+Introduction
+
+The Interactive Reader with LangChain is a Streamlit application designed to provide an interactive reading experience for PDF documents. Leveraging natural language processing (NLP) and chat models from LangChain, this application allows users to ask questions about the content of uploaded PDFs and receive informative responses.
+Features
+
+    User-Friendly Interface: The application offers an intuitive user interface through Streamlit, making it easy for users to interact with PDF documents.
+
+    NLP-Powered Chat Interaction: LangChain's NLP and chat models enable users to ask questions about the document, receiving chat-like responses for enhanced understanding.
+
+    Interactive Document Display: The application dynamically displays relevant pages of the document, allowing users to visualize the context of the responses.
+
+LangChain Overview
+What is LangChain?
+
+LangChain is a natural language processing (NLP) library and framework designed for various language-related tasks. It provides tools and models for tasks such as text embedding, document retrieval, and conversational AI. LangChain is built on top of popular NLP libraries and frameworks, making it accessible and extensible for developers.
+Key Features of LangChain
+
+    Embeddings: LangChain supports embedding models for converting textual data into vector representations suitable for various NLP tasks.
+
+    Retrieval Models: LangChain provides retrieval models for efficient document and text search, enabling applications like document summarization and chat-based systems.
+
+    Conversational AI: The framework includes tools for building conversational AI systems, allowing developers to create interactive chat applications.
+
+Installation and Usage
+Installation
+
+    Install Python on your system.
+    Install the required dependencies by running pip install -r requirements.txt.
+
+Running the Application
+
+Execute the following command in the terminal to launch the application:
+
+bash
+
+streamlit run app.py
+
+Follow the provided Streamlit URL to access the application.
+How to Use
+
+    Upload a PDF document using the provided interface.
+    Click the "Process" button to analyze the document.
+    Ask questions related to the document's content.
+    The application provides interactive chat responses and displays relevant pages of the document.
+
+File Structure
+
+    app.py: The main application script.
+    htmlTemplates.py: Contains HTML templates used for rendering chat messages.
+
+Dependencies
+
+    Streamlit
+    LangChain
+    PyPDF2
+    Tempfile
+    Base64
+
+Tasks and Implementation
+Task 1: Import the Libraries
+
+The necessary libraries are imported, including Streamlit, LangChain, and other dependencies.
+Task 4: Process the Input PDF
+
+Defines a function process_file to process the uploaded PDF using LangChain embeddings and retrieval models.
+Task 6: Method for Handling User Input
+
+The handle_userinput function manages user queries, updates the chat history, and displays messages in an interactive chat format.
