@@ -1,5 +1,6 @@
 # Task 1: Import the Libraries
 import streamlit as st
+import pypdf
 from dotenv import load_dotenv
 from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
