@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "repl-nix-pdf-reader-using-langchain-and-streamlit"
+version = "0.1.0"
+description = ""
+authors = ["Replit user <<>>"]
+readme = "README.md"
+packages = [{include = "repl_nix_pdf_reader_using_langchain_and_streamlit"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.0"
+streamlit = "^1.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
